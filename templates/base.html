@@ -1,30 +1,58 @@
-<html lang="en">
-    <head>
+<html lang="en"> 
+    <head> 
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="C:\Users\Дима\Desktop\anim sait\static\css\style.css">
+        <link rel="stylesheet" href="C:\Users\Дима\Desktop\anim sait\static\css\style.css"> 
         <link rel="stylesheet" href="C:\Users\Дима\Desktop\anim sait\static\css\button.css">
-    </head>
+        <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+                    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+                    crossorigin="anonymous">
+    </head> 
 
-    <body>
-        <header>
-            <div class="header">
-                <button class="custom-btn btn-3 menu-btn"><span>Меню</span></button>
-                <h1 class="anim_head">Anime сайт</h1>
-                <button class="custom-btn btn-3 log-btn"><span>Войти</span></button>
-            </div>
-            <div class="menu_mobile ">
-                <div class="menu_header">
-                    <button class="close-menu custom-btn btn-3"><span>X</span></button>
-                    <h2 class="menu_title">Меню:</h2>
-                </div>
-                <div class="buttons">
-                    <button class="art-btn custom-btn btn-3"><span>Арты</span></button>
-                    <button class="zam-btn custom-btn btn-3"><span>Заметки</span></button>
-                    <button class="friend-btn custom-btn btn-3"><span>Друзья</span></button>
-                </div>
-            </div>
-        </header>
 
-        <script src="C:\Users\Дима\Desktop\anim sait\static\menu_active\menu_active.js"></script>
-    </body>
+    <body> 
+        <header> 
+            <div class="header"> 
+                <button class="custom-btn btn-3 menu-btn"><span>Меню</span></button> 
+                <h1 class="anim_head">Anime сайт</h1> 
+                <button class="custom-btn btn-3 log-btn"><span>Войти</span></button> 
+            </div> 
+        </header> 
+        <div class="blur close"> 
+        </div> 
+        <div class="menu_mobile "> 
+            <div class="menu_header"> 
+                <button class="close-menu custom-btn btn-3"><span>X</span></button> 
+                <h2 class="menu_title">Меню:</h2> 
+            </div> 
+            <div class="buttons"> 
+                <form action="art_page"><button class="art-btn custom-btn btn-3"><span>Арты</span></button></form> 
+                <form action="zam_page"><button class="zam-btn custom-btn btn-3"><span>Заметки</span></button></form> 
+                <form action="friend_page"><button class="friend-btn custom-btn btn-3"><span>Друзья</span></button></form> 
+            </div> 
+        </div> 
+ 
+        <div class="blur close modal-blur"> 
+            <div class="modal_window"> 
+                <div> 
+                    <button class="custom-btn btn-3 close-modal"><span>X</span></button> 
+                    <h1 class="header-modal-log">Вход</h1> 
+                </div> 
+                <div class="input_1">
+                    <h2 class="login">Логин</h2>
+                    <input type="login"  id="InputLogin" aria-describedby="loginHelp" placeholder="Enter login" class="form-control login-input">
+                </div>
+                <div class="input_2">
+                    <h2 class="password">Пароль</h2>
+                    <input type="password"  id="Inputpassword" aria-describedby="passwordHelp" placeholder="Enter password" class="password-input form-control">
+                </div>
+                <div class="register-vhod">
+                    <a href="https://register">Зарегестрироваться</a>
+                    <button class="custom-btn btn-3 vhod-btn"><span>Войти</span></button>
+                </div>
+            </div> 
+        </div> 
+ 
+        <script src="C:\Users\Дима\Desktop\anim sait\static\menu_active\menu_active.js"></script> 
+    </body> 
 </html>
